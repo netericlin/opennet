@@ -1,0 +1,6 @@
+
+# Need to install "REST Client" Extension
+
+### access to localhost
+GET http://localhost:8080/
+
