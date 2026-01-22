@@ -4,3 +4,38 @@
 ### access to localhost
 GET http://localhost:8080/
 
+
+### Create Notification
+POST http://localhost:8080/notifications
+Content-Type: application/json
+
+{
+  "type": "email",
+  "recipient": "neteric@gmail.com",
+  "subject": "OpenNet",
+  "content": "Interesting home test."
+}
+
+
+### Get Notification
+GET http://localhost:8080/notifications/1
+
+
+### Delete Notification
+DELETE http://localhost:8080/notifications/1
+
+
+### Get recent Notifications
+GET http://localhost:8080/notifications/recent
+
+
+### Update Notification
+PUT http://localhost:8080/notifications/2
+Content-Type: application/json
+
+{
+  "type": "email",
+  "recipient": "neteric@gmail.com",
+  "subject": "OpenNet-update",
+  "content": "Interesting home test."
+}
